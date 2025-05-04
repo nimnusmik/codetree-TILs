@@ -1,8 +1,6 @@
 chars = list(map(str,input().split()))
-new_list = []
+new_list = [x for x in range(0,len(chars),-1)]
+print(chars.item())
 
-for i in range(len(chars),-1):
-    new_list.append(chars[i])
-print(new_list)
 
      
