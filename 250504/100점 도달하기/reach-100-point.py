@@ -10,5 +10,5 @@ while score <= 100:
     elif score >= 60:
         print('D', end=' ')
     else:
-        print('E', end=' ')
+        print('F', end=' ')
     score += 1
