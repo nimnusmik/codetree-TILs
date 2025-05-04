@@ -1,16 +1,9 @@
 f, s = map(int, input().split())
-new_list = [f, s, f+s]
-#0,  1,  2,  3,  4,  5, 6, 7, 8, 9, 10, 11 
-#f, s, f+s
+new_list = [f, s, f + s]  # ✅ 처음 3개는 그대로 더함
+
 for i in range(3, 10):
-    new_num = (new_list[i-1] + new_list[i-2])
-    if new_num < 10: 
-        new_num = new_num
-    else: 
-        new_num = new_num % 10 
+    new_num = (new_list[i-1] + new_list[i-2]) % 10  # 이후부터는 % 10
     new_list.append(new_num)
 
-for i in range(len(new_list)):
-    print(new_list[i], end = ' ')
-
-
+for i in range(10):
+    print(new_list[i], end=' ')
